@@ -12,19 +12,6 @@ function Hero() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.to(visualRef.current, {
-        y: 90,
-        scale: 0.93,
-        rotateX: 4,
-        ease: 'none',
-        scrollTrigger: {
-          trigger: '#inicio',
-          start: 'top top',
-          end: 'bottom top',
-          scrub: true,
-        },
-      });
-
       gsap.to(layerRef.current, {
         y: -80,
         x: 24,
@@ -110,7 +97,7 @@ function Hero() {
           <div className="absolute -inset-8 rounded-[2rem] bg-cyanGlow/10 blur-3xl" />
           <div className="flip-card relative min-h-[600px] sm:min-h-[390px]" aria-label="Tarjeta interactiva de perfil y diploma">
             <div className="flip-card-inner relative min-h-[600px] sm:min-h-[390px]">
-              <div className="flip-card-face glass-panel absolute inset-0 overflow-hidden rounded-[1.5rem] p-4">
+              <div className="flip-card-face flip-card-back glass-panel absolute inset-0 overflow-hidden rounded-[1.5rem] p-4">
                 <div className="flex items-center gap-2 border-b border-white/10 pb-4">
                   <span className="h-3 w-3 rounded-full bg-red-400" />
                   <span className="h-3 w-3 rounded-full bg-yellow-300" />
@@ -144,7 +131,7 @@ function Hero() {
                 </div>
               </div>
 
-              <div className="flip-card-face flip-card-back glass-panel absolute inset-0 overflow-hidden rounded-[1.5rem] p-4">
+              <div className="flip-card-face glass-panel absolute inset-0 overflow-hidden rounded-[1.5rem] p-4">
                 <div className="flex items-center justify-between gap-3 border-b border-white/10 pb-4">
                   <div className="flex items-center gap-2">
                     <span className="h-3 w-3 rounded-full bg-mintGlow" />

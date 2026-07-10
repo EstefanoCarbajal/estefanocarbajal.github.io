@@ -4,7 +4,7 @@ import { projectCategories } from '../data/projects.js';
 function Projects() {
   const getGridClass = (categoryId) => {
     if (categoryId === 'sitios-web') return 'lg:grid-cols-3';
-    if (categoryId === 'sistemas') return 'lg:grid-cols-1';
+    if (categoryId === 'sistemas' || categoryId === 'agencia-digital') return 'lg:grid-cols-1';
     return 'lg:grid-cols-2';
   };
 
@@ -77,7 +77,7 @@ function Projects() {
                                 ))}
                               </div>
 
-                              <a href={project.link} target="_blank" rel="noreferrer" className="secondary-button mt-7">
+                              <a href={project.link} target="_blank" rel="noreferrer" className="project-button mx-auto mt-7 flex w-fit">
                                 Ver proyecto
                               </a>
                             </div>
@@ -132,7 +132,12 @@ function Projects() {
                               </span>
                             ))}
                           </div>
-                          <a href={project.link} target="_blank" rel="noreferrer" className="secondary-button mt-7">
+                          <a
+                            href={project.link}
+                            target="_blank"
+                            rel="noreferrer"
+                            className={`project-button mt-7 ${category.id === 'sitios-web' ? 'mx-auto flex w-fit' : ''}`}
+                          >
                             Ver proyecto
                           </a>
                         </>
