@@ -1,6 +1,6 @@
 {
   "homepage": "https://estefanocarbajal.github.io",
-  "name": "estefano-carbajal-portfolio",
+  "name": "estefanocarbajal.github.io",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -25,3 +25,4 @@
     "tailwindcss": "^3.4.17"
   }
 }
+

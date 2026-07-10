@@ -28,10 +28,6 @@ export const skills = [
   'Laravel',
   'MySQL',
   'WordPress',
-  'WooCommerce',
-  'Git',
-  'GitHub',
-  'Bootstrap',
-  'Tailwind CSS',
+  'Git/GitHub',
   'React',
 ];

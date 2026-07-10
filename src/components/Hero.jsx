@@ -1,7 +1,8 @@
-import { useEffect, useRef } from 'react';
+﻿import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import diplomaImage from '../assets/images/diploma-bachiller.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -107,36 +108,60 @@ function Hero() {
           className="relative mx-auto w-full max-w-[560px]"
         >
           <div className="absolute -inset-8 rounded-[2rem] bg-cyanGlow/10 blur-3xl" />
-          <div className="glass-panel relative overflow-hidden rounded-[1.5rem] p-4">
-            <div className="flex items-center gap-2 border-b border-white/10 pb-4">
-              <span className="h-3 w-3 rounded-full bg-red-400" />
-              <span className="h-3 w-3 rounded-full bg-yellow-300" />
-              <span className="h-3 w-3 rounded-full bg-mintGlow" />
-              <span className="ml-3 rounded-full bg-white/10 px-3 py-1 text-xs text-slate-300">estefano.dev</span>
-            </div>
-            <div className="grid gap-4 pt-5 sm:grid-cols-[0.82fr_1.18fr]">
-              <div className="rounded-2xl border border-cyanGlow/25 bg-cyanGlow/10 p-5">
-                <div className="mx-auto flex h-32 w-32 items-center justify-center rounded-full border border-white/20 bg-gradient-to-br from-cyanGlow/30 via-white/10 to-violetGlow/30 font-display text-4xl font-bold text-white shadow-glow">
-                  EC
+          <div className="flip-card relative min-h-[600px] sm:min-h-[390px]" aria-label="Tarjeta interactiva de perfil y diploma">
+            <div className="flip-card-inner relative min-h-[600px] sm:min-h-[390px]">
+              <div className="flip-card-face glass-panel absolute inset-0 overflow-hidden rounded-[1.5rem] p-4">
+                <div className="flex items-center gap-2 border-b border-white/10 pb-4">
+                  <span className="h-3 w-3 rounded-full bg-red-400" />
+                  <span className="h-3 w-3 rounded-full bg-yellow-300" />
+                  <span className="h-3 w-3 rounded-full bg-mintGlow" />
+                  <span className="ml-3 rounded-full bg-white/10 px-3 py-1 text-xs text-slate-300">estefano.dev</span>
                 </div>
-                <div className="mt-5 space-y-3">
-                  <span className="block h-3 rounded-full bg-white/25" />
-                  <span className="block h-3 w-3/4 rounded-full bg-cyanGlow/45" />
-                  <span className="block h-3 w-1/2 rounded-full bg-mintGlow/45" />
-                </div>
-              </div>
-              <div className="space-y-4">
-                {['IA aplicada', 'SQL & MySQL', 'Desarrollo Web'].map((item, index) => (
-                  <div key={item} className="rounded-2xl border border-white/10 bg-white/[0.06] p-4">
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm font-bold text-white">{item}</span>
-                      <span className="text-xs text-cyan-100">0{index + 1}</span>
+                <div className="grid gap-4 pt-5 sm:grid-cols-[0.82fr_1.18fr]">
+                  <div className="rounded-2xl border border-cyanGlow/25 bg-cyanGlow/10 p-5">
+                    <div className="mx-auto flex h-32 w-32 items-center justify-center rounded-full border border-white/20 bg-gradient-to-br from-cyanGlow/30 via-white/10 to-violetGlow/30 font-display text-4xl font-bold text-white shadow-glow">
+                      EC
                     </div>
-                    <div className="mt-4 h-2 rounded-full bg-white/10">
-                      <div className="h-2 rounded-full bg-gradient-to-r from-cyanGlow to-mintGlow" style={{ width: `${78 + index * 7}%` }} />
+                    <div className="mt-5 space-y-3">
+                      <span className="block h-3 rounded-full bg-white/25" />
+                      <span className="block h-3 w-3/4 rounded-full bg-cyanGlow/45" />
+                      <span className="block h-3 w-1/2 rounded-full bg-mintGlow/45" />
                     </div>
                   </div>
-                ))}
+                  <div className="space-y-4">
+                    {['IA aplicada', 'SQL & MySQL', 'Desarrollo Web'].map((item, index) => (
+                      <div key={item} className="rounded-2xl border border-white/10 bg-white/[0.06] p-4">
+                        <div className="flex items-center justify-between">
+                          <span className="text-sm font-bold text-white">{item}</span>
+                          <span className="text-xs text-cyan-100">0{index + 1}</span>
+                        </div>
+                        <div className="mt-4 h-2 rounded-full bg-white/10">
+                          <div className="h-2 rounded-full bg-gradient-to-r from-cyanGlow to-mintGlow" style={{ width: `${78 + index * 7}%` }} />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div className="flip-card-face flip-card-back glass-panel absolute inset-0 overflow-hidden rounded-[1.5rem] p-4">
+                <div className="flex items-center justify-between gap-3 border-b border-white/10 pb-4">
+                  <div className="flex items-center gap-2">
+                    <span className="h-3 w-3 rounded-full bg-mintGlow" />
+                    <span className="h-3 w-3 rounded-full bg-cyanGlow" />
+                    <span className="h-3 w-3 rounded-full bg-violetGlow" />
+                  </div>
+                  <span className="rounded-full bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-cyan-100">
+                    Diploma de bachiller
+                  </span>
+                </div>
+                <div className="mt-4 flex h-[calc(100%-4.75rem)] items-center justify-center rounded-2xl border border-white/10 bg-white/[0.04] p-2">
+                  <img
+                    src={diplomaImage}
+                    alt="Diploma de bachiller en Ingenieria de Sistemas de Informacion"
+                    className="max-h-full w-full rounded-xl object-contain shadow-card"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -147,3 +172,4 @@ function Hero() {
 }
 
 export default Hero;
+
