@@ -93,7 +93,7 @@ function Contact() {
             <h3 className="mt-2 text-lg font-semibold text-slate-200 sm:text-xl">✉️: tefa3099@gmail.com</h3>
             <h3 className="mt-2 text-lg font-semibold text-slate-200 sm:text-xl">📞: +51 970 949 338</h3>
             <p className="section-copy mx-auto">
-              Disponible para oportunidades laborales en tecnologia.
+              Disponible para oportunidades laborales en IA aplicada, desarrollo de software/web y bases de datos SQL.
             </p>
 
             <div className="mt-9 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">

@@ -20,7 +20,7 @@ function Projects() {
           <span className="eyebrow">Proyectos</span>
           <h2 className="section-title">Proyectos</h2>
           <p className="section-copy">
-            Sistemas empresariales, sitios web y agencia digital organizados para mostrar mejor mi experiencia en IA aplicada, SQL y desarrollo web.
+            Proyectos que muestran mi experiencia aplicando IA, desarrollo de software/web y bases de datos SQL en soluciones reales.
           </p>
         </motion.div>
 
@@ -87,7 +87,7 @@ function Projects() {
                                 <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
                                   <div>
                                     <span className="text-xs font-bold uppercase tracking-[0.2em] text-mintGlow">Stack tecnico</span>
-                                    <h5 className="mt-2 font-display text-xl font-bold text-white">Habilidades y herramientas usadas</h5>
+                                    <h5 className="mt-2 font-display text-xl font-bold text-white">Herramientas, codigo y datos aplicados</h5>
                                   </div>
                                 </div>
                                 <div className="mt-5 grid gap-3 sm:grid-cols-2">

@@ -8,17 +8,17 @@ export const projectCategories = [
   {
     id: 'sistemas',
     title: '1 - Sistemas empresariales',
-    summary: 'Soluciones internas con Laravel, MySQL y logica de negocio para ordenar operaciones reales.',
+    summary: 'Software interno con Laravel, MySQL, SQL y logica de negocio para ordenar operaciones reales.',
     projects: [
       {
         title: 'Mini-ERP Corporacion Lyacos',
         type: 'Sistema empresarial',
         description:
-          'Sistema interno desarrollado para gestionar productos, proveedores, ordenes de compra, recepcion de compras, almacenes, lotes, stock, kardex y transferencias.',
+          'Sistema interno desarrollado para gestionar productos, proveedores, compras, almacenes, lotes, stock, kardex y transferencias, integrando logica de negocio y base de datos MySQL.',
         technologies: ['Laravel', 'MySQL', 'SQL', 'Blade', 'Bootstrap', 'Git'],
         featuredStack: [
-          { label: 'IA', value: 'Claude Code, Codex, ChatGPT' },
-          { label: 'Base de datos', value: 'MySQL, modelado relacional, consultas SQL' },
+          { label: 'IA', value: 'Claude, Codex, ChatGPT y prompts para analisis, codigo y documentacion' },
+          { label: 'Base de datos', value: 'MySQL, modelado relacional, consultas SQL y trazabilidad' },
           { label: 'Backend', value: 'Laravel, PHP, controladores y reglas de negocio' },
           { label: 'Frontend', value: 'Blade, Bootstrap, dashboard responsive' },
           { label: 'Gestion', value: 'Git, GitHub y despliegue web' },
@@ -34,13 +34,13 @@ export const projectCategories = [
   {
     id: 'sitios-web',
     title: '2 - Sitios web',
-    summary: 'Webs corporativas enfocadas en presencia digital, confianza, SEO basico y conversion.',
+    summary: 'Desarrollo web aplicado a sitios reales, cuidando estructura, responsive design, rendimiento y experiencia de usuario.',
     projects: [
       {
         title: 'Drogueria Lyacos',
         type: 'Sitio web corporativo',
         description:
-          'Sitio web orientado a presencia digital, catalogo informativo y posicionamiento para productos medicos en Peru.',
+          'Sitio web corporativo orientado a presencia digital, catalogo informativo, estructura clara y posicionamiento para productos medicos en Peru.',
         technologies: ['WordPress', 'SEO', 'Diseno Web'],
         link: 'https://droguerialyacos.com',
         image: drogueriaPreview,
@@ -51,7 +51,7 @@ export const projectCategories = [
         title: 'Taxi On Time Miami',
         type: 'Sitio web corporativo',
         description:
-          'Pagina web para empresa de transporte, enfocada en captar clientes y facilitar el contacto directo.',
+          'Pagina web para empresa de transporte, enfocada en arquitectura simple, responsive design y contacto directo con usuarios.',
         technologies: ['WordPress', 'Responsive Design', 'WhatsApp'],
         link: 'https://taxiontimemiami.com',
         image: taxiPreview,
@@ -62,7 +62,7 @@ export const projectCategories = [
         title: 'Miami Elite Valet Parking',
         type: 'Sitio web corporativo',
         description:
-          'Sitio web profesional para servicio de valet parking, orientado a imagen corporativa, confianza y conversion.',
+          'Sitio web profesional para servicio de valet parking, orientado a estructura visual, confianza, usabilidad y experiencia responsive.',
         technologies: ['WordPress', 'Diseno Web', 'SEO basico'],
         link: 'https://miamielitevaletparking.com',
         image: valetPreview,
@@ -73,14 +73,14 @@ export const projectCategories = [
   },
   {
     id: 'agencia-digital',
-    title: '3 - Agencia digital',
-    summary: 'Marca personal para crear sitios, landing pages, tiendas virtuales y soluciones digitales para negocios.',
+    title: '3 - Proyecto web personal',
+    summary: 'Proyecto personal donde aplico desarrollo web, comunicacion digital, herramientas de IA y criterio tecnico.',
     projects: [
       {
         title: 'TuClickWeb',
-        type: 'Agencia digital',
+        type: 'Proyecto web personal',
         description:
-          'Marca personal/agencia enfocada en desarrollo web profesional, landing pages, tiendas virtuales y soluciones digitales para negocios.',
+          'Proyecto personal enfocado en practicar desarrollo web, contenido digital, branding, SEO basico y uso de IA para planificar y mejorar soluciones.',
         technologies: ['WordPress', 'Diseno Web', 'Branding', 'SEO', 'IA aplicada'],
         link: 'https://tuclickweb.com',
         image: tuclickwebPreview,

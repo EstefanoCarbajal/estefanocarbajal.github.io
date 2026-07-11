@@ -12,9 +12,9 @@ function Skills() {
           transition={{ duration: 0.7 }}
         >
           <span className="eyebrow">Skills</span>
-          <h2 className="section-title">Habilidades principales: </h2>
+          <h2 className="section-title">Habilidades principales</h2>
           <p className="section-copy">
-            Mi enfoque combina inteligencia artificial aplicada, bases de datos relacionales y desarrollo web para crear productos digitales utiles para empresas.
+            Mi perfil combina herramientas de IA, desarrollo de software/web y bases de datos SQL para construir soluciones tecnicas con criterio, orden y aprendizaje continuo.
           </p>
         </motion.div>
 

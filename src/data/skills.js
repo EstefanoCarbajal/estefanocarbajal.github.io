@@ -1,24 +1,27 @@
 export const focusAreas = [
   {
-    title: 'IA aplicada',
-    description: 'Uso herramientas de IA para analizar procesos, acelerar prototipos, documentar flujos y crear soluciones digitales mas eficientes.',
-    items: ['Prompt engineering', 'Automatizacion asistida', 'Analisis de procesos'],
+    title: 'Herramientas de IA',
+    description: 'Uso Claude, ChatGPT, Codex y prompt engineering para investigar, programar, documentar, depurar codigo y acelerar soluciones tecnicas.',
+    items: ['Claude', 'ChatGPT', 'Prompt engineering'],
   },
   {
     title: 'Bases de datos SQL',
-    description: 'Modelo estructuras de datos, consultas y reportes para sistemas empresariales que necesitan orden, trazabilidad y control.',
-    items: ['MySQL', 'Consultas SQL', 'Kardex y stock'],
+    description: 'Trabajo con modelado relacional, consultas, reportes y logica de datos para sistemas que necesitan orden, trazabilidad y control.',
+    items: ['MySQL', 'Consultas SQL', 'Reportes'],
   },
   {
-    title: 'Desarrollo web',
-    description: 'Construyo sitios, tiendas y sistemas con tecnologias modernas, cuidando rendimiento, responsive design y experiencia de usuario.',
-    items: ['React', 'Laravel', 'WordPress'],
+    title: 'Software y web',
+    description: 'Desarrollo interfaces, sistemas y aplicaciones web con tecnologias modernas, cuidando estructura, usabilidad y mantenimiento del codigo.',
+    items: ['React', 'Laravel', 'PHP'],
   },
 ];
 
 export const skills = [
-  'IA aplicada',
+  'Claude',
+  'ChatGPT',
   'Prompt Engineering',
+  'Codex',
+  'IA aplicada',
   'Automatizacion',
   'SQL',
   'HTML',
