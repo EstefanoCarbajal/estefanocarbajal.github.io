@@ -58,7 +58,7 @@ function Hero() {
             transition={{ delay: 0.2, duration: 0.7, ease: 'easeOut' }}
             className="mt-6 max-w-2xl text-xl font-semibold text-cyan-100 sm:text-2xl"
           >
-            Desarrollo de software, Inteligencia Artificial y Gestión de Bases de datos SQL
+            Desarrollo de software, IA, bases de datos SQL y gestión de proyectos
           </motion.p>
 
           <motion.p
@@ -67,7 +67,7 @@ function Hero() {
             transition={{ delay: 0.3, duration: 0.7, ease: 'easeOut' }}
             className="mt-6 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg"
           >
-            Ingeniero de Sistemas especializado en el desarrollo de soluciones tecnológicas eficientes, software a medida y sistemas integrados con bases de datos SQL. Combino programación, prompt engineering y herramientas de inteligencia artificial para optimizar procesos y resolver necesidades reales. 
+            Ingeniero de Sistemas especializado en soluciones tecnológicas eficientes, software a medida y sistemas integrados con bases de datos SQL. Combino programación, IA y una gestión organizada del proyecto —desde la definición de prioridades hasta la entrega— para resolver necesidades reales.
           </motion.p>
 
           <motion.div
@@ -121,7 +121,7 @@ function Hero() {
                     </div>
                   </div>
                   <div className="space-y-4">
-                    {['Claude, ChatGPT & prompts', 'SQL & MySQL', 'Software y Web'].map((item, index) => (
+                    {['Desarrollo de Software', 'SQL & MySQL', 'Software y Web'].map((item, index) => (
                       <div key={item} className="rounded-2xl border border-white/10 bg-white/[0.06] p-4">
                         <div className="flex items-center justify-between">
                           <span className="text-sm font-bold text-white">{item}</span>

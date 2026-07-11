@@ -20,7 +20,7 @@ function Projects() {
           <span className="eyebrow">Proyectos</span>
           <h2 className="section-title">Proyectos</h2>
           <p className="section-copy">
-            Proyectos que muestran mi experiencia aplicando IA, desarrollo de software/web y bases de datos SQL en soluciones reales.
+            Proyectos que muestran mi experiencia aplicando IA, desarrollo de software/web y bases de datos SQL en soluciones reales, con una planificación orientada a objetivos, entregas y mejora continua.
           </p>
         </motion.div>
 
@@ -44,7 +44,7 @@ function Projects() {
                   >
                     <div
                       className={`relative bg-gradient-to-br ${project.accent} p-4 ${
-                        category.id === 'sistemas' ? 'lg:p-5' : ''
+                        category.id === 'sistemas' ? 'lg:p-5' : category.id === 'agencia-digital' ? 'p-7 sm:p-9' : ''
                       }`}
                     >
                       <span className="absolute left-7 top-7 z-10 rounded-full border border-white/15 bg-night/70 px-3 py-1 text-xs font-bold text-cyan-100 backdrop-blur-xl">

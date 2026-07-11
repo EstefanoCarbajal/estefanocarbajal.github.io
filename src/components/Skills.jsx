@@ -14,7 +14,7 @@ function Skills() {
           <span className="eyebrow">Skills</span>
           <h2 className="section-title">Habilidades principales</h2>
           <p className="section-copy">
-            Mi perfil combina herramientas de IA, desarrollo de software/web y bases de datos SQL para construir soluciones tecnicas con criterio, orden y aprendizaje continuo.
+            Mi perfil combina IA, desarrollo de software/web, bases de datos SQL y gestión de proyectos para construir soluciones técnicas con criterio, orden y aprendizaje continuo.
           </p>
         </motion.div>
 
@@ -42,21 +42,20 @@ function Skills() {
               </div>
             </motion.article>
           ))}
-        </div>
-
-        <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
-          {skills.map((skill, index) => (
-            <motion.div
-              key={skill}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.25 }}
-              transition={{ duration: 0.45, delay: index * 0.035 }}
-              className="glass-panel rounded-2xl px-4 py-5 text-center text-sm font-bold text-slate-100 transition hover:-translate-y-1 hover:border-cyanGlow/35 hover:bg-cyanGlow/10 sm:text-base"
-            >
-              {skill}
-            </motion.div>
-          ))}
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:col-span-2 lg:grid-cols-3">
+            {skills.map((skill, index) => (
+              <motion.div
+                key={skill}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.25 }}
+                transition={{ duration: 0.45, delay: index * 0.035 }}
+                className="glass-panel rounded-2xl px-4 py-5 text-center text-sm font-bold text-slate-100 transition hover:-translate-y-1 hover:border-cyanGlow/35 hover:bg-cyanGlow/10 sm:text-base"
+              >
+                {skill}
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -23,7 +23,7 @@ const contactLinks = [
   {
     label: 'GitHub',
     detail: 'Ver codigo',
-    href: '#',
+    href: 'https://github.com/EstefanoCarbajal',
     icon: 'github',
   },
 ];
@@ -76,7 +76,7 @@ function ContactIcon({ name }) {
 
 function Contact() {
   return (
-    <section id="contacto" className="py-24 sm:py-28">
+    <section id="contacto" className="py-24 sm:py-28" >
       <div className="section-shell">
         <motion.div
           initial={{ opacity: 0, y: 32 }}
@@ -93,7 +93,7 @@ function Contact() {
             <h3 className="mt-2 text-lg font-semibold text-slate-200 sm:text-xl">✉️: tefa3099@gmail.com</h3>
             <h3 className="mt-2 text-lg font-semibold text-slate-200 sm:text-xl">📞: +51 970 949 338</h3>
             <p className="section-copy mx-auto">
-              Disponible para oportunidades laborales en IA aplicada, desarrollo de software/web y bases de datos SQL.
+              Disponible para oportunidades en IA aplicada, desarrollo de software/web, bases de datos SQL y apoyo en la organización de proyectos tecnológicos con metodologías ágiles.
             </p>
 
             <div className="mt-9 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
