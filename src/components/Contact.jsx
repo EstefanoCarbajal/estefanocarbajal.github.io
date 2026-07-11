@@ -17,7 +17,7 @@ const contactLinks = [
   {
     label: 'LinkedIn',
     detail: 'Ver perfil',
-    href: '#',
+    href: 'https://www.linkedin.com/in/estefano-carbajal',
     icon: 'linkedin',
   },
   {
