@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import diplomaImage from '../assets/images/diploma-bachiller.png';
+import profileImage from '../assets/images/profile-photo.jpeg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -106,8 +107,12 @@ function Hero() {
                 </div>
                 <div className="grid gap-4 pt-5 sm:grid-cols-[0.82fr_1.18fr]">
                   <div className="rounded-2xl border border-cyanGlow/25 bg-cyanGlow/10 p-5">
-                    <div className="mx-auto flex h-32 w-32 items-center justify-center rounded-full border border-white/20 bg-gradient-to-br from-cyanGlow/30 via-white/10 to-violetGlow/30 font-display text-4xl font-bold text-white shadow-glow">
-                      EC
+                    <div className="mx-auto flex h-32 w-32 items-center justify-center overflow-hidden rounded-full border border-white/20 bg-gradient-to-br from-cyanGlow/30 via-white/10 to-violetGlow/30 shadow-glow">
+                      <img
+                        src={profileImage}
+                        alt="Foto de perfil de Estefano Carbajal"
+                        className="h-full w-full scale-150 object-cover object-[10%_65%]"
+                      />
                     </div>
                     <div className="mt-5 space-y-3">
                       <span className="block h-3 rounded-full bg-white/25" />

@@ -89,7 +89,7 @@ function Contact() {
 
           <div className="relative mx-auto max-w-4xl text-center">
             <span className="eyebrow">Contacto</span>
-            <h2 className="section-title">Conversemos</h2>
+            <h2 className="section-title">Datos de Contacto</h2>
             <h3 className="mt-2 text-lg font-semibold text-slate-200 sm:text-xl">✉️: tefa3099@gmail.com</h3>
             <h3 className="mt-2 text-lg font-semibold text-slate-200 sm:text-xl">📞: +51 970 949 338</h3>
             <p className="section-copy mx-auto">
